@@ -1,3 +1,3 @@
 # ojus-demo
 This is my first repo.
-Author: Ojus Naik
+Author: Ojus Anil Naik
