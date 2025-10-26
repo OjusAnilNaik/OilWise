@@ -1,0 +1,45 @@
+.gov-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.chart-container {
+  margin: 2rem 0;
+}
+
+.state-table-section {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.state-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.state-table th, .state-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.state-table th {
+  background-color: #2e8b57;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.status-green { color: #2e8b57; font-weight: 600; }
+.status-yellow { color: #f4a300; font-weight: 600; }
+.status-red { color: #e74c3c; font-weight: 600; }

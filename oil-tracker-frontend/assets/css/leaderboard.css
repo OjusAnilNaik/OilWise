@@ -1,0 +1,129 @@
+.leaderboard-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.tab-btn.active {
+  background-color: #2e8b57;
+  color: white;
+}
+
+.leaderboard-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.leaderboard-header, .leaderboard-entry {
+  display: grid;
+  grid-template-columns: 50px 1fr 120px 100px 120px;
+  padding: 0.8rem 1rem;
+  align-items: center;
+}
+
+.leaderboard-header {
+  font-weight: 600;
+  background-color: #2e8b57;
+  color: white;
+  border-radius: 10px;
+}
+
+.leaderboard-entry {
+  background-color: #f9f9f9;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  gap: 0.5rem;
+}
+
+.badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.badge.green { background-color: #2e8b57; }
+.badge.bronze { background-color: #cd7f32; }
+.badge.silver { background-color: #a9a9a9; }
+.badge.gold { background-color: #f4b400; }
+.badge.yellow { background-color: #f4b400; }
+.badge.red { background-color: #d9534f; }
+
+#stateLeaderboard .leaderboard-entry {
+  grid-template-columns: 50px 1fr 150px 100px;
+}
+
+#stateLeaderboard .leaderboard-header {
+  grid-template-columns: 50px 1fr 150px 100px;
+}
+
+/* Legend Styling */
+.legend-container {
+  background-color: #f1f1f1;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.legend-container h3 {
+  margin-bottom: 0.5rem;
+  color: #2e8b57;
+}
+
+.legend-section {
+  margin-bottom: 0.8rem;
+}
+
+.legend-section h4 {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.legend-item .badge {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  padding: 0;
+}

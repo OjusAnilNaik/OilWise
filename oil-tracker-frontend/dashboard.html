@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | OilWise</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <img src="assets/images/logo.png" alt="OilWise Logo" class="logo">
+  <h1>OilWise</h1>
+  <nav class="nav-links">
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="compare.html">Compare Oils</a>
+    <a href="govt-dashboard.html">Gov Dashboard</a>
+    <a href="index.html">Logout</a>
+  </nav>
+</header>
+
+<main class="dashboard-container">
+  <h2>Welcome, User!</h2>
+
+  <!-- Personal Oil Tracker -->
+  <section class="oil-tracker">
+    <h3>Your Oil Tracker</h3>
+    <form id="oilForm">
+      <label for="oilConsumed"> Enter Oil Consumed (ml):</label>
+      <input type="number" id="oilConsumed" placeholder="e.g., 1200">
+      <button type="submit">Update</button>
+    </form>
+    <p>Total Oil Consumed: <span id="oilUsed">0</span> ml</p>
+    <p>Suggested Intake per month: <span id="suggestedOil">1200</span> ml</p>
+  </section>
+
+  <!-- Optional BMI and Cholesterol Inputs -->
+  <section class="health-inputs">
+    <h3>Enter Your Health Metrics (Optional)</h3>
+    <form id="healthForm">
+      <label for="bmi">BMI:</label>
+      <input type="number" id="bmi" name="bmi" placeholder="e.g., 22.5">
+      
+      <label for="cholesterol">Cholesterol (mg/dL):</label>
+      <input type="number" id="cholesterol" name="cholesterol" placeholder="e.g., 180">
+      
+      <button type="submit">Get Suggestions</button>
+    </form>
+  </section>
+
+  <!-- Oil Swap Suggestions -->
+  <section class="oil-swap">
+    <h3>Oil Swap & Suggestions</h3>
+    <div id="oilSuggestions">
+      <p>Enter BMI, Cholesterol, or Oil Consumed above to get personalized suggestions and alternatives.</p>
+    </div>
+  </section>
+
+  <!-- Health Legend at the Bottom -->
+  <div class="health-legend-container">
+    <h3>Health Legend</h3>
+    <div class="legend-section">
+      <h4>BMI</h4>
+      <div class="legend-items">
+        <div class="legend-item"><span class="badge dangerously-low"></span> Dangerously Low (&lt;16)</div>
+        <div class="legend-item"><span class="badge low"></span> Low (16 – 18.5)</div>
+        <div class="legend-item"><span class="badge normal"></span> Normal (18.5 – 24.9)</div>
+        <div class="legend-item"><span class="badge high"></span> High (25 – 30)</div>
+        <div class="legend-item"><span class="badge dangerously-high"></span> Dangerously High (&gt;30)</div>
+      </div>
+    </div>
+    <div class="legend-section">
+      <h4>Cholesterol (mg/dL)</h4>
+      <div class="legend-items">
+        <div class="legend-item"><span class="badge dangerously-low"></span> Dangerously Low (&lt;120)</div>
+        <div class="legend-item"><span class="badge low"></span> Low (120 – 159)</div>
+        <div class="legend-item"><span class="badge normal"></span> Normal (160 – 199)</div>
+        <div class="legend-item"><span class="badge high"></span> High (200 – 239)</div>
+        <div class="legend-item"><span class="badge dangerously-high"></span> Dangerously High (&gt;240)</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>© 2025 OilWise | Promoting Healthy Living</p>
+</footer>
+
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+.dashboard-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+form label {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2e8b57;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #256e46;
+}
+
+/* Oil Tracker display */
+.oil-tracker p {
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/* Oil Swap suggestions */
+.oil-swap p {
+  margin-top: 0.5rem;
+}
+
+/* Health Legend Styling */
+.health-legend-container {
+  background-color: #f1f1f1;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.health-legend-container h3 {
+  color: #2e8b57;
+  margin-bottom: 0.5rem;
+}
+
+.legend-section {
+  margin-bottom: 1rem;
+}
+
+.legend-section h4 {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.legend-item .badge {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.badge.dangerously-low { background-color: #8b0000; }
+.badge.low { background-color: #ff6347; }
+.badge.normal { background-color: #2e8b57; }
+.badge.high { background-color: #f4b400; }
+.badge.dangerously-high { background-color: #d9534f; }

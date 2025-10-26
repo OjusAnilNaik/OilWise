@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard | OilWise</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/leaderboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <img src="assets/images/logo.png" alt="OilWise Logo" class="logo">
+  <h1>OilWise</h1>
+  <nav class="nav-links">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="leaderboard.html" class="active">Leaderboard</a>
+    <a href="compare.html">Compare Oils</a>
+    <a href="govt-dashboard.html">Gov Dashboard</a>
+    <a href="index.html">Logout</a>
+  </nav>
+</header>
+
+<main class="leaderboard-container">
+  <h2>🏆 Leaderboard</h2>
+
+  <!-- Legend Box -->
+  <div class="legend-container">
+    <!-- Person Legend -->
+    <div id="personLegend" class="legend-section">
+      <h4>Person Leaderboard</h4>
+      <div class="legend-items">
+        <div class="legend-item"><span class="badge gold"></span> ≤ 12,000 ml (Excellent)</div>
+        <div class="legend-item"><span class="badge silver"></span> 12,001 – 14,400 ml (Good)</div>
+        <div class="legend-item"><span class="badge bronze"></span> 14,401 – 17,400 ml (Moderate)</div>
+        <div class="legend-item"><span class="badge green"></span> > 17,400 ml (High Consumption)</div>
+      </div>
+    </div>
+
+    <!-- State Legend -->
+    <div id="stateLegend" class="legend-section" style="display:none;">
+      <h4>State Leaderboard</h4>
+      <div class="legend-items">
+        <div class="legend-item"><span class="badge green"></span> ≤ 12,000 ml (Low Avg Consumption)</div>
+        <div class="legend-item"><span class="badge yellow"></span> 12,001 – 14,400 ml (Moderate Avg)</div>
+        <div class="legend-item"><span class="badge red"></span> > 14,400 ml (High Avg Consumption)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('person')">Person Leaderboard</button>
+    <button class="tab-btn" onclick="showTab('state')">State Leaderboard</button>
+  </div>
+
+  <!-- Person Leaderboard -->
+  <div id="personLeaderboard" class="leaderboard-table">
+    <div class="leaderboard-header">
+      <span>Rank</span>
+      <span>User</span>
+      <span>Oil Used (ml)</span>
+      <span>Badge</span>
+      <span>State</span>
+    </div>
+  </div>
+
+  <!-- State Leaderboard -->
+  <div id="stateLeaderboard" class="leaderboard-table" style="display:none;">
+    <div class="leaderboard-header">
+      <span>Rank</span>
+      <span>State</span>
+      <span>Average Oil Used (ml)</span>
+      <span>Badge</span>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>© 2025 OilWise | Promoting Healthy Living</p>
+</footer>
+
+<script src="assets/js/leaderboard.js"></script>
+</body>
+</html>

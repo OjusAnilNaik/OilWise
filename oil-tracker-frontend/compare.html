@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Oils | OilWise</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/compare.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <img src="assets/images/logo.png" alt="OilWise Logo" class="logo">
+    <h1>OilWise</h1>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="compare.html" class="active">Compare Oils</a>
+      <a href="govt-dashboard.html">Gov Dashboard</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Comparison Section -->
+  <main class="compare-container">
+    <h2>🛢️ Oil Comparison Tool</h2>
+    <p>Select two oils below to compare their nutritional values and health impact.</p>
+
+    <div class="selectors">
+      <select id="oil1">
+        <option value="">-- Select Oil 1 --</option>
+        <option value="Sunflower Oil">Sunflower Oil</option>
+        <option value="Mustard Oil">Mustard Oil</option>
+        <option value="Olive Oil">Olive Oil</option>
+        <option value="Coconut Oil">Coconut Oil</option>
+        <option value="Groundnut Oil">Groundnut Oil</option>
+      </select>
+
+      <select id="oil2">
+        <option value="">-- Select Oil 2 --</option>
+        <option value="Sunflower Oil">Sunflower Oil</option>
+        <option value="Mustard Oil">Mustard Oil</option>
+        <option value="Olive Oil">Olive Oil</option>
+        <option value="Coconut Oil">Coconut Oil</option>
+        <option value="Groundnut Oil">Groundnut Oil</option>
+      </select>
+
+      <button id="compareBtn">Compare</button>
+    </div>
+
+    <div id="comparisonResult" class="comparison-result">
+      <!-- Filled by JS -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 OilWise | Promoting Healthy Living</p>
+  </footer>
+
+  <script src="assets/js/compare.js"></script>
+</body>
+</html>

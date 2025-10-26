@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #2e8b57;
+  color: white;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #2e8b57;
+  margin-bottom: 10px;
+}
+
+.login-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  background: #2e8b57;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #276b45;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2e8b57;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}

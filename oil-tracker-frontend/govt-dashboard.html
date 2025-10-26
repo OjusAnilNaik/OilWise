@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Dashboard | OilWise</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/govt-dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <img src="assets/images/logo.png" alt="OilWise Logo" class="logo">
+    <h1>OilWise</h1>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="compare.html">Compare Oils</a>
+      <a href="govt-dashboard.html" class="active">Gov Dashboard</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Government Dashboard Section -->
+  <main class="gov-container">
+    <h2>📊 State-wise Oil Consumption</h2>
+    <p>Track average weekly oil consumption per state.</p>
+
+    <div class="chart-container">
+      <canvas id="stateChart" width="800" height="400"></canvas>
+    </div>
+
+    <section class="state-table-section">
+      <h3>State-wise Data</h3>
+      <table class="state-table">
+        <thead>
+          <tr>
+            <th>State</th>
+            <th>Average Weekly Oil (ml)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="stateTableBody">
+          <!-- Filled by JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 OilWise | Promoting Healthy Living</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/govt-dashboard.js"></script>
+</body>
+</html>
